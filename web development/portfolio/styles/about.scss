@@ -1,0 +1,78 @@
+@import "./global";
+
+.container {
+    .child {
+        @include flex();
+        height: 100%;
+        .box {
+            @include flex(space-between, flex-start);
+            height: 70%;
+            margin: 20px;
+            position: relative;
+            .image {
+                height: 120%;
+                width: 50%;
+            }
+        
+        .text {
+            width: 50%;
+            h1 {
+                font-size: 60px;
+                color: $secondary;
+                font-family: $primaryFont;
+            }
+            p {
+                width: 95%;
+                font-size: 24px;
+                letter-spacing: 2px;
+                font-family: $secondaryFont;
+            }
+        .buttons {
+            margin: 1% 0px;
+    
+        h2 {
+            font-family: $primaryFont;
+            letter-spacing: 3px;
+            font-size: 35px;
+            text-decoration: underline;
+            span {
+            text-decoration: underline;
+                color: $secondary;
+            }
+        }
+        .socialMedia {
+            @include flex(flex-start);
+            gap: 30px;
+            padding: 10px 0px;
+            a {
+                text-decoration: none;
+                color: black;
+                transition: 0.3s ease-in-out;
+            &:hover {
+                &:nth-child(1) {
+                    color: blue;
+                }
+                &:nth-child(2) {
+                    color: deeppink;
+                }
+                &:nth-child(3) {
+                    color: rgb(87, 87, 87);
+                }
+                &:nth-child(4) {
+                    color: rgb(56, 0, 116);
+                }
+                &:nth-child(5) {
+                    color: rgb(194, 81, 0);
+                }
+            }
+                li {
+                    font-size: 37px;
+                    list-style: none;
+                }
+            }
+            }
+        }
+        }
+        }
+    }
+}

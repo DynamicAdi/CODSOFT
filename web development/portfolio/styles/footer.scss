@@ -1,0 +1,55 @@
+@import "./global";
+
+.wrapper {
+    width: 100vw;
+    height: 15vw;
+    background-image: url("https://source.unsplash.com/yellow-and-white-balloons-on-orange-surface-PGdW_bHDbpI");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    .context {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.218);
+        backdrop-filter: blur(20px);
+        padding: 15px;
+        @include flex(space-evenly, flex-start);
+        gap: 50px;
+    
+    .contents {
+        width: 30%;
+        h2 {
+        font-family: $primaryFont;
+        font-size: 27px;
+
+    }
+    p {
+        font-family: $secondaryFont;
+        font-weight: 200;
+        font-weight: 400;
+    }
+    }
+
+    ul {
+    h2 {
+        font-family: $primaryFont;
+        font-size: 27px;
+    }
+    li {
+        list-style: none;
+        font-family: $secondaryFont;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    }
+}
+.last {
+    font-family: $secondaryFont;
+    font-size: 18px;
+    padding: 5px 0px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+}

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container .child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+}
+.container .child .box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 70%;
+  margin: 20px;
+  position: relative;
+}
+.container .child .box .image {
+  height: 120%;
+  width: 50%;
+}
+.container .child .box .text {
+  width: 50%;
+}
+.container .child .box .text h1 {
+  font-size: 60px;
+  color: #ea3e00;
+  font-family: "Jost", sans-serif;
+}
+.container .child .box .text p {
+  width: 95%;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: "Oxygen", sans-serif;
+}
+.container .child .box .text .buttons {
+  margin: 1% 0px;
+}
+.container .child .box .text .buttons h2 {
+  font-family: "Jost", sans-serif;
+  letter-spacing: 3px;
+  font-size: 35px;
+  text-decoration: underline;
+}
+.container .child .box .text .buttons h2 span {
+  text-decoration: underline;
+  color: #ea3e00;
+}
+.container .child .box .text .buttons .socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  padding: 10px 0px;
+}
+.container .child .box .text .buttons .socialMedia a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+.container .child .box .text .buttons .socialMedia a:hover:nth-child(1) {
+  color: blue;
+}
+.container .child .box .text .buttons .socialMedia a:hover:nth-child(2) {
+  color: deeppink;
+}
+.container .child .box .text .buttons .socialMedia a:hover:nth-child(3) {
+  color: rgb(87, 87, 87);
+}
+.container .child .box .text .buttons .socialMedia a:hover:nth-child(4) {
+  color: rgb(56, 0, 116);
+}
+.container .child .box .text .buttons .socialMedia a:hover:nth-child(5) {
+  color: rgb(194, 81, 0);
+}
+.container .child .box .text .buttons .socialMedia a li {
+  font-size: 37px;
+  list-style: none;
+}

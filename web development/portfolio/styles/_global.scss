@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+$deafult: rgb(104, 0, 195);
+$secondary: #ea3e00;
+$third: #1779e1;
+
+
+$primaryFont: 'Jost', sans-serif;
+$secondaryFont: 'Oxygen', sans-serif;;
+
+@mixin flex($jc: center, $ali: center, $dir:row , $wrap: wrap) {
+    display: flex;
+    align-items: $ali;
+    justify-content: $jc;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+}
+
+@mixin full() {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    @include full();
+}

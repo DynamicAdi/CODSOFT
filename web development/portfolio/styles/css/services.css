@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container .children #serve {
+  color: rgb(0, 151, 151);
+}
+.container .children .services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  height: auto;
+  gap: 40px;
+}
+.container .children .services .myServices {
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.container .children .services .myServices:hover .parent .box {
+  transform: translateY(0%);
+  max-height: auto;
+}
+.container .children .services .myServices:hover img {
+  filter: brightness(50%);
+}
+.container .children .services .myServices img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+.container .children .services .myServices .parent {
+  position: absolute;
+  inset: 0;
+}
+.container .children .services .myServices .parent .box {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  width: 100%;
+  background-color: rgba(185, 185, 185, 0.437);
+  border-radius: 20px;
+  padding-left: 10px;
+  transform: translateY(100px);
+  transition: all 0.3s ease;
+}
+.container .children .services .myServices .parent .box h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.container .children .services .myServices .parent .box p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  width: 90%;
+}
