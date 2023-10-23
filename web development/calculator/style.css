@@ -1,0 +1,117 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the body and center the content */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://source.unsplash.com/a-close-up-of-a-pattern-of-orange-white-and-black-cubes-TTZdTlFEw80");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Style the wrapper for the calculator */
+.wrapper {
+  background-color: #0099ff4e;
+  border-radius: 0px 0px 5px 5px;
+  padding: 20px;
+  width: 330px;
+  position: relative;
+  box-shadow: 0 5px 12px 1px #252525;
+  top: 8%;
+}
+
+/* Style the calculator screen */
+.screen {
+  box-shadow: 0 0 12px 1px #252525;
+  background-color: #0099ff4e;
+  backdrop-filter: blur(8px);
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: right;
+  position:absolute;
+  z-index: -1;
+  inset: 0;
+  top: -35%;
+  height: 35%;
+}
+
+#result {
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 24px;
+  color: black;
+}
+
+/* Style the calculator buttons */
+.buttonsRow {
+  display: flex;
+  gap: 7%;
+}
+
+.buttons {
+  background-color: rgba(17, 187, 130, 0.556);
+  border: transparent;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 16px;
+  text-align: center;
+  width: 20%;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.buttons:hover {
+  transform: scale(1.1);
+  color: black;
+  background-color: #ffffff;
+}
+
+#dot {
+  position: absolute;
+  left: 50%;
+}
+#zero {
+  width: 45%;
+}
+#equal {
+  position: absolute;
+  left: 75%;
+  height: 25%;
+  top: 65%;
+  background-color: limegreen;
+
+}
+#equal:hover, #add:hover {
+  background-color: #ffffff;
+
+}
+#add {
+  position: absolute;
+  left: 75%;
+  height: 22%;
+  background-color: #ffb60096;
+}
+
+.symbol {
+  background-color: #ffb700b5;
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.666);
+}

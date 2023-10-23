@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CodSoft - Calculator</title>
+</head>
+    <body>
+    <div class="wrapper">
+        <div class="screen">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="buttonsRow">
+            <button class="buttons red" onclick="clearResult()">C</button>
+            <button class="buttons red" onclick="backspace()">CE</button>
+            <button class="buttons symbol" onclick="append('/')">/</button>
+            <button class="buttons symbol" onclick="append('*')">*</button>
+        </div>
+        <div class="buttonsRow">
+            <button class="buttons" onclick="append('7')">7</button>
+            <button class="buttons" onclick="append('8')">8</button>
+            <button class="buttons" onclick="append('9')">9</button>
+            <button class="buttons symbol" onclick="append('-')">-</button>
+        </div>
+        <div class="buttonsRow">
+            <button class="buttons" onclick="append('4')">4</button>
+            <button class="buttons" onclick="append('5')">5</button>
+            <button class="buttons" onclick="append('6')">6</button>
+            <button class="buttons" id="add" onclick="append('+')">+</button>
+        </div>
+        <div class="buttonsRow">
+            <button class="buttons" onclick="append('1')">1</button>
+            <button class="buttons" onclick="append('2')">2</button>
+            <button class="buttons" onclick="append('3')">3</button>
+            <button class="buttons" id="equal" onclick="calculate()">=</button>
+        </div>
+        <div class="buttonsRow">
+            <button class="buttons" id="zero" onclick="append('0')">0</button>
+            <button class="buttons symbol" id="dot" onclick="append('.')">.</button>
+        </div>
+</div>
+        <script>
+            let result = document.getElementById('result');
+
+            function append(value) {
+                result.value += value;
+            }
+
+            function clearResult() {
+                result.value = '';
+            }
+
+            function backspace() {
+                result.value = result.value.slice(0, -1);
+            }
+
+            function calculate() {
+                try {
+                    Number(result.value);
+                    result.value = eval(result.value);
+                } catch (error) {
+                    result.value = "Error";
+                    console.log(error);
+                }
+            }
+        </script>
+    </body>
+</html>
